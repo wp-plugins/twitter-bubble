@@ -2,8 +2,8 @@
 Contributors: mortenf
 Donate link: http://www.mfd-consult.dk/paypal/
 Tags: widget, sidebar, twitter, ajax
-Requires at least: 2.7
-Tested up to: 2.8
+Requires at least: 2.8
+Tested up to: 2.8.1
 Stable tag: trunk
 
 A sidebar widget showing the latest twitter update in a nice talk bubble, suitable for wide sidebars.
@@ -21,7 +21,7 @@ Try Twitter Bubble.
 1. Unzip and upload to the plugin directory, usually at `wp-content/plugins/`.
 1. Activate the plugin from the WordPress "Plugin" administration screen.
 1. Go to the WordPress "Widget" administration screen, and drag the Twitter Bubble widget onto the sidebar of your choice.
-1. Input your twitter username and optionally a prefix text, that will be displayed before the bubble.
+1. Input your twitter user name, optionally enter a prefix text that will be displayed before the bubble, and adjust the font size if necessary.
 1. Hit "Save".
 
 == Screenshots ==
@@ -32,8 +32,12 @@ Try Twitter Bubble.
 
 = The bubble doesn't show up nicely in my sidebar, what is wrong? =
 
-It is likely, that your sidebar is simply too narrow. The bubble requires a width of at least 250 pixels,
-and works best with at around 350 pixels or more.
+It is likely that your sidebar is simply too narrow. The bubble requires a width of at least 230 pixels,
+and works best with at around 400 pixels or more.
+
+= It keeps showing the text "Loading..."? =
+
+Make sure your theme uses the hooks `wp_head()` and `wp_footer`, otherwise the necessary CSS and JavaScript won't be sent to your browser.
 
 = Who came up with the bubble design? =
 
@@ -49,6 +53,13 @@ If your question isn't answered here, please do leave a comment in the forum or 
 [www.mfd-consult.dk/twitter-bubble](http://www.mfd-consult.dk/twitter-bubble/)
 
 == Changelog ==
+
+= 1.1 =
+* Optimized layout to make it possible to use with a narrow sidebar.
+* Added font-size option to widget interface.
+* Now only outputs Twitter Badge JavaScript when widget is shown.
+* Fixed incompatibility with plugins that alter the default WordPress widget/sidebar functionality.
+* Prepared for translations.
 
 = 1.0 =
 * Initial release.
