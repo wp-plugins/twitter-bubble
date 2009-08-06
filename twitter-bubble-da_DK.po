@@ -1,0 +1,41 @@
+# Twitter Bubble.
+# Copyright (C) 2009 Morten Høybye Frederiksen
+# This file is distributed under the same license as the plugin itself.
+# Morten Høybye Frederiksen <morten@mfd-consult.dk>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: twitter-bubble 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/twitter-bubble\n"
+"POT-Creation-Date: 2009-07-28 18:46+0000\n"
+"PO-Revision-Date: 2009-07-28 20:55+0100\n"
+"Last-Translator: Morten Høybye Frederiksen <morten@mfd-consult.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+#: twitter-bubble.php:40
+msgid "Loading..."
+msgstr "Henter..."
+
+#: twitter-bubble.php:71
+msgid "Twitter user name:"
+msgstr "Twitter brugernavn:"
+
+#: twitter-bubble.php:75
+msgid "Prefix:"
+msgstr "Præfiks:"
+
+#: twitter-bubble.php:79
+msgid "Font size:"
+msgstr "Fontstørrelse:"
+
+#. Plugin Name of an extension
+msgid "Twitter Bubble"
+msgstr "Twitter Boble"
+
+#. Description of an extension
+msgid "A sidebar widget to display Twitter updates in a nice talk bubble using the Javascript <a href=\"http://twitter.com/badges/which_badge\">Twitter 'badge'</a>."
+msgstr "En widget der viser det seneste tweet fra en Twitterbruger i en fin taleboble, ved hjælp af et <a href=\"http://twitter.com/badges/which_badge\">Twitter 'badge'</a>."
+

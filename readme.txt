@@ -3,7 +3,7 @@ Contributors: mortenf
 Donate link: http://www.mfd-consult.dk/paypal/
 Tags: widget, sidebar, twitter, ajax
 Requires at least: 2.8
-Tested up to: 2.8.1
+Tested up to: 2.8.3
 Stable tag: trunk
 
 A sidebar widget showing the latest twitter update in a nice talk bubble, suitable for wide sidebars.
@@ -45,7 +45,22 @@ A very similar looking design was first spotted at the [homepage of Danish polit
 
 = Can I put it somewhere else besides the sidebar? =
 
-Not easily, but you can probably add another "sidebar" to your theme in the place where you want the Twitter Bubble.
+Yes. Simply add the template tag `<?php twitter_bubble('<yourtwitterusername', 'optional prefix: '); ?>` somewhere
+in your theme. 
+If your theme doesn't support the hooks `wp_head()` and `wp_footer`, you will also need to place calls to`
+`twitter_bubble_head()` and `twitter_bubble_footer()` in the header and footer, respectively.
+
+= I have translated the plugin into another language, now what? =
+
+Great, thanks! Please do leave a comment on the plugin's homepage
+[www.mfd-consult.dk/twitter-bubble](http://www.mfd-consult.dk/twitter-bubble/) or send an e-mail with details; I'll
+make sure it's included in the next version.
+
+= What's in the pipeline? =
+
+A real roadmap isn't in place, but the following features are currently on the to-do list:
+* Translation of (copy of) JavaScript from Twitter.
+* Multiuser support.
 
 = Another question? =
 
@@ -53,6 +68,10 @@ If your question isn't answered here, please do leave a comment in the forum or 
 [www.mfd-consult.dk/twitter-bubble](http://www.mfd-consult.dk/twitter-bubble/)
 
 == Changelog ==
+
+= 1.2 =
+* Added non-widget support.
+* Added Danish translation.
 
 = 1.1 =
 * Optimized layout to make it possible to use with a narrow sidebar.
